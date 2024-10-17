@@ -2,7 +2,6 @@ configMapGenerator:
 - files:
   - application.yml
   name: 82265683-configmap
-  namesapce: "82265683"
 resources:
 - ../../base
 - pvc.yaml
