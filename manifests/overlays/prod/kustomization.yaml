@@ -9,6 +9,7 @@ patchesStrategicMerge:
 - deployment.yaml
 - ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
+namesapce: "82265683"
 kind: Kustomization
 namePrefix: prod-
 images:
