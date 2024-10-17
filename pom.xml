@@ -12,6 +12,7 @@
 	<artifactId>cloudsample</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>82265683</name>
+	<namespace>82265683</namespace>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
