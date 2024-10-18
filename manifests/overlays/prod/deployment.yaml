@@ -2,7 +2,6 @@ apiVersion : apps/v1
 kind: Deployment
 metadata:
   name: "82265683"
-  namespace: "82265683"
 spec:
   replicas: 1
   template:
