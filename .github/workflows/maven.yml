@@ -8,7 +8,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    namespaces: "82265683"
     
     steps:
     - uses: actions/checkout@v4
