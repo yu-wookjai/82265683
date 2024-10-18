@@ -9,11 +9,9 @@ patchesStrategicMerge:
 - deployment.yaml
 - ingress.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
-namespace: "82265683"
 kind: Kustomization
+namespace: "82265683"
 namePrefix: prod-
 images:
-- name: cepgstapacr.azurecr.io/82265683
-  newTag: "202410181418"
-- name: cepgstapacr.azurecr.io/cloud-sample
-  newTag: "202410160836"
+- name: ceappacr.azurecr.io/82265683
+  newTag: "202410140646"
