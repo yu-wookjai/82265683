@@ -11,10 +11,10 @@ spec:
           command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
-          - mountPath: /mnt/cloud-sample
+          - mountPath: /mnt/template-for-aa
             name: "82265683-volume"
             readOnly: false
-            subPath: cloud-sample
+            subPath: template-for-aa
           - mountPath: /config
             name: application-properties
             readOnly: true
@@ -22,11 +22,11 @@ spec:
       volumes:
       - name: "82265683-volume"
         persistentVolumeClaim:
-          claimName: cepg-aa-std-pvc
+          claimName: ce-aa-std-pvc
       - name: application-properties
         configMap:
           name: "82265683-configmap"
           items:
             - key: application.yml
-              path: applicati
-              defaultMode: 420
+              path: application.yml
+          defaultMode: 420
